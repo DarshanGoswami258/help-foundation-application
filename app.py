@@ -18,7 +18,7 @@ with open('final_model.joblib','rb') as file:
 def prediction(input_list):
     scaled_input = scale.transform([input_list])
     pca_input = pca.transform(scaled_input)
-    output = model.predict(pca_layout)[0]
+    output = model.predict(pca_input)[0]
 
     if output==0:
         return 'Developed'
