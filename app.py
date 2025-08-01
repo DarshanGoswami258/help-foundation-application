@@ -46,7 +46,7 @@ def main():
 
     if st.button('predict'):
         response = prediction(in_data)
-        st.sucess(response)
+        st.success(response)
 
 if __name__=='__main__':
     main()
